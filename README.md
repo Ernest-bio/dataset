@@ -1,5 +1,46 @@
 ## Описание
-Репозиторий содержит информацию для работы с dataset.
+Этот репозиторий содержит скрипты для:
+
+1. Загрузки CSV-датасета динозавров с Google Drive.
+2. Преобразования типов колонок и сохранения в Parquet.
+
+---
+
+## 1. Требования
+
+- Python 3.10+  
+- Conda (рекомендуется) 
+- Установленные библиотеки:
+`pip install pandas pyarrow`
+
+
+## 2. Рекомендуется создать окружение conda
+Создание и активация conda окружения:
+`conda create -n dinosaurs_env python=3.10
+conda activate dinosaurs_env`
+
+## 3. Загрузка Dataset
+
+Файл: data_loader.py
+
+Запусти скрипт:
+
+`python download_to_parquet.py`
+
+CSV скачивается с Google Drive.
+
+Столбцы приводятся к нужным типам (numeric, datetime, str, int).
+
+Результат сохраняется в dinosaurs.parquet
+
+Проверить запись данных можно скриптом:
+```python
+import pandas as pd
+
+df = pd.read_parquet("dinosaurs.parquet")
+print(df.head(10))
+print(df.dtypes)
+```
 
 ## Ссылка на dataset 
 https://drive.google.com/file/d/1C3pyOhWaMakoxML6MRnJDwYR5Z2xWAj-/view?usp=sharing

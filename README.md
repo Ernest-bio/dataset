@@ -13,11 +13,14 @@
 - Установленные библиотеки:
 `pip install pandas pyarrow`
 
+---
 
 ## 2. Рекомендуется создать окружение conda
 Создание и активация conda окружения:
 `conda create -n dinosaurs_env python=3.10
 conda activate dinosaurs_env`
+
+---
 
 ## 3. Загрузка Dataset
 
@@ -33,6 +36,8 @@ CSV скачивается с Google Drive.
 
 Результат сохраняется в dinosaurs.parquet
 
+---
+
 Проверить запись данных можно скриптом:
 ```python
 import pandas as pd
@@ -41,12 +46,18 @@ df = pd.read_parquet("dinosaurs.parquet")
 print(df.head(10))
 print(df.dtypes)
 ```
+---
 
-## Ссылка на dataset 
+## 4. Ссылка на dataset, загруженный на Google drive: 
 https://drive.google.com/file/d/1C3pyOhWaMakoxML6MRnJDwYR5Z2xWAj-/view?usp=sharing
 
-## Исходник  
+---
+
+## 5. Исходник данных с сайта kaggle: 
 https://www.kaggle.com/datasets/canozensoy/dinosaur-genera-dataset?resource=download
+
+---
+## 6. Результаты работы:
 
 ## Первые 10 строк после выполнения команды raw_data.head(10)
 <img width="1571" height="1010" alt="image" src="https://github.com/user-attachments/assets/068a60cb-0753-4485-9c35-22a5dd270b08" />

@@ -68,4 +68,4 @@ https://www.kaggle.com/datasets/canozensoy/dinosaur-genera-dataset?resource=down
 ---
 # 7. Рендер ноутбука
 
-https://nbviewer.org/github/Ernest-bio/dataset/blob/main/notebooks/EDAA.ipynb
+https://nbviewer.org/github/Ernest-bio/dataset/blob/main/notebooks/EDA.ipynb

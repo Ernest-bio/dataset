@@ -65,4 +65,7 @@ https://www.kaggle.com/datasets/canozensoy/dinosaur-genera-dataset?resource=down
 ## Приведение типов
 <img width="1782" height="439" alt="image" src="https://github.com/user-attachments/assets/b58c3b81-8313-4fb9-86d0-fcd0782ae1bb" />
 
+---
+# 7. Рендер ноутбука
 
+https://nbviewer.org/github/Ernest-bit/dataset/blob/main/notebooks/EDA.ipynb
